@@ -1,9 +1,13 @@
-" function here must be defined as function! pluginname#functioname()
+" function here must be defined as function! lol#functioname()
 
 let s:plugin_path = escape(expand('<sfile>:p:h'), '\')
 
+function! lol#cat() abort
+  echom '>^.^<' | redraw
+endfunction
+
 " :help map-operator
-function! pluginname#myoperator(type, ...)
+function! lol#operator(type, ...)
   " save state so that we can restore at end of function
   let sel_save = &selection
   let &selection = "inclusive"
@@ -20,7 +24,7 @@ function! pluginname#myoperator(type, ...)
   endif
 
   " we have the "selected" text in @@ now
-  echomsg "pluginname: " . @@
+  echomsg "'>^.^<': " . @@
 
   " restore state
   let &selection = sel_save
