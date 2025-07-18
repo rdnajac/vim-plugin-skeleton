@@ -1,11 +1,13 @@
-# vim-plugin-skeleton
+# vim-lol
 
 This projects serves as a template to create new vim plugins
+and test out vim features in a sandboxed environment.
 
 ## Top-level structure
 
 - plugin: Main directory. A plugin can be just one file living in this directory
-- autoload: If the plugin is big, you can put most of the functions here and they will be loaded only when they are used. This speeds up vim startup time.
+- autoload: If the plugin is big, you can put most of the functions here and
+  they will be loaded only when they are used. This speeds up vim startup time.
 - ftdetect: vimscript code to detect the filetype (if your plugin has to deal with new filetypes)
 - ftplugin: code that is tied to a specific filetype
 - syntax: Vim syntax files
@@ -32,9 +34,10 @@ Help pages relevant to plugin development
 - :help write-compiler-plugin
 - :help write-local-help
 - :help usr_41.txt
-- :help:internal-variables " scopea a: , s:, l:, etc
+- :help:internal-variables " scope a: , s:, l:, etc
 - :help expr-quote " string interpolation in vim \n
-- :help type() "takes avalue or variable and returns anumber from 0 to 5 dependin on the vuel's type 0 for a Number, 1 for a String
+- :help type() "takes avalue or variable and returns a number from 0 to 5
+  depending on the vuel's type 0 for a Number, 1 for a String
 - :help line()
 - :help UserGettingBored
 - :help file-patterns

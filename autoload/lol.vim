@@ -1,5 +1,5 @@
-" function here must be defined as function! lol#functioname()
-
+" autoload/lol.vim
+" see `:help autoload`
 let s:plugin_path = escape(expand('<sfile>:p:h'), '\')
 
 function! lol#cat() abort
